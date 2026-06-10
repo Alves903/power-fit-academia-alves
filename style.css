@@ -1,0 +1,447 @@
+/* Reset básico (pesquisei como faz) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  padding-top: 90px;
+  background-color: white !important;
+  color: white;
+}
+
+.custom-navbar {
+  background: #000 !important;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 32px;
+  color: #ffc107;
+}
+
+.logo-text {
+  display: block;
+  color: #ffc107;
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.logo-subtitle {
+  display: block;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+.banner {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("imagens/fotofundo.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.banner-texto h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.banner-texto span {
+  color: #ffc107;
+}
+
+.banner-texto p {
+  font-size: 18px;
+  color: #d1d5db;
+  margin-bottom: 30px;
+}
+
+.banner-img {
+  width: 100%;
+  /* pesquisei como faz animação */
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btn-warning {
+  font-weight: bold !important;
+}
+
+.modalidades {
+  background: #0b0f19;
+  color: white;
+}
+
+.titulo-secao {
+  font-size: 36px;
+  color: #ffc107;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.contador {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+#pesquisa {
+  max-width: 500px;
+  margin: auto;
+}
+
+.modalidade-card {
+  background: #111827 !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+  height: 100%;
+}
+
+.modalidade-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+}
+
+.modalidade-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.modalidade-card h5 {
+  color: #ffc107;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.modalidade-card p {
+  color: #d1d5db;
+  min-height: 70px;
+}
+
+#planos .card {
+  background: #111827;
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#planos .card:hover {
+  transform: scale(1.05);
+}
+
+#planos h2 {
+  color: #ffc107;
+}
+
+#contato .form-control {
+  background: #1f2937;
+  border: none;
+  color: white;
+}
+
+#contato .form-control::placeholder {
+  color: #cbd5e1;
+}
+
+#contato .form-control:focus {
+  background: #1f2937;
+  color: white;
+}
+
+.dark-mode {
+  background: #111 !important;
+}
+
+.dark-mode .navbar {
+  background: #000 !important;
+}
+
+.dark-mode .modalidade-card {
+  background: #1e1e1e !important;
+}
+
+.destaque-card {
+  background: #111827;
+  color: white;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.destaque-card i {
+  font-size: 48px;
+  color: #ffc107;
+}
+
+.destaque-card:hover {
+  transform: translateY(-10px);
+}
+
+#topoBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.relogio {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #000;
+  color: #ffc107;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dark-mode {
+  background: #121212 !important;
+  color: white !important;
+}
+
+.dark-mode .card {
+  background: #1e1e1e !important;
+  color: white !important;
+}
+
+.dark-mode .modalidades {
+  background: #000 !important;
+}
+
+.dark-mode .form-control {
+  background: #222 !important;
+  color: white !important;
+}
+
+.footer {
+  background: #000;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 3px solid #ffc107;
+}
+
+.footer h4 {
+  color: #ffc107;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer p {
+  margin-bottom: 15px;
+}
+
+.redes {
+  margin: 20px 0;
+}
+
+.redes a {
+  color: #ffc107;
+  font-size: 32px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 80px;
+  }
+
+  .custom-navbar {
+    padding: 10px 0;
+  }
+
+  .logo-icon {
+    font-size: 24px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .logo-subtitle {
+    font-size: 9px;
+  }
+
+  .banner {
+    text-align: center;
+    padding: 60px 15px;
+    min-height: auto;
+  }
+
+  .banner-texto h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .banner-texto p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .banner-img {
+    margin-top: 30px;
+    width: 90%;
+    animation: none;
+  }
+
+  .titulo-secao {
+    font-size: 28px;
+  }
+
+  .contador {
+    font-size: 16px;
+  }
+
+  #pesquisa {
+    width: 100%;
+  }
+
+  .modalidade-card img {
+    height: 220px;
+  }
+
+  .modalidade-card h5 {
+    font-size: 22px;
+  }
+
+  .modalidade-card p {
+    font-size: 14px;
+  }
+
+  #planos .card {
+    margin-bottom: 15px;
+  }
+
+  #planos h2 {
+    font-size: 32px;
+  }
+
+  .destaque-card {
+    margin-bottom: 15px;
+  }
+
+  .destaque-card i {
+    font-size: 40px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .footer h4 {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .redes a {
+    font-size: 28px;
+  }
+
+  .relogio {
+    font-size: 12px;
+    padding: 8px;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  #topoBtn {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .btn-warning {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,27 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Compiled output
+*.map
+
+# Dependencies
+/node_modules
+/package-lock.json
+
+# Build output
+/dist/
+/build/

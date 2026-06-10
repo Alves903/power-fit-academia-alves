@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Fit Academia Alves</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<button id="topoBtn" class="btn btn-warning">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<div id="relogio" class="relogio"></div>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+            <div class="container">
+
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class="bi bi-barbell logo-icon"></i>
+
+                    <div>
+                        <span class="logo-text">POWER FIT</span>
+                        <small class="logo-subtitle">ACADEMIA ALVES</small>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                    <ul class="navbar-nav gap-lg-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modalidades">Modalidades</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planos">Planos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <button id="darkModeBtn" class="btn btn-outline-warning">
+                    <i class="bi bi-moon-fill"></i> Modo Escuro
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 banner-texto">
+
+                        <h1>
+                            <strong>
+                                TRANSFORME SUA
+                                <span>SAÚDE</span>
+                                E QUALIDADE DE VIDA
+                            </strong>
+                        </h1>
+
+                        <p>
+                            Conheça nossas modalidades e alcance seus objetivos
+                            com acompanhamento profissional e estrutura completa.
+                        </p>
+
+                        <a href="#modalidades" class="btn btn-warning btn-lg">
+                            <strong>Começar Agora</strong>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="imagens/banneracad.png" alt="Casal treinando" class="img-fluid banner-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modalidades" class="modalidades py-5">
+            <div class="container">
+
+                <h2 class="text-center titulo-secao">
+                    Nossas Modalidades
+                </h2>
+
+                <p class="text-center contador">
+                    Itens Disponíveis:
+                    <span id="contador"></span>
+                </p>
+
+                <input type="text" id="pesquisa" class="form-control mb-4" placeholder="Pesquisar modalidade...">
+                <div class="text-center mb-4">
+
+                    <button id="toggleCards" class="btn btn-warning">
+                        Mostrar/Ocultar Modalidades
+                    </button>
+
+                </div>
+
+                <div id="listaModalidades" class="row g-4">
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card modalidade-card">
+                            <img src="imagens/musculacao.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5>Musculação</h5>
+
+                                <p>
+                                    Ganhe força, resistência e definição muscular.
+                                </p>
+
+                                <a href="#" class="btn btn-warning">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card modalidade-card">
+                            <img src="imagens/funcional.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5>Funcional</h5>
+
+                                <p>
+                                    Exercícios dinâmicos para o corpo inteiro.
+                                </p>
+
+                                <a href="#" class="btn btn-warning">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card modalidade-card">
+                            <img src="imagens/cross.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5>Cross Training</h5>
+
+                                <p>
+                                    Treinos intensos para superar limites.
+                                </p>
+
+                                <a href="#" class="btn btn-warning">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card modalidade-card">
+                            <img src="imagens/pilates.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5>Pilates</h5>
+
+                                <p>
+                                    Melhore postura e flexibilidade.
+                                </p>
+
+                                <a href="#" class="btn btn-warning">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card modalidade-card">
+                            <img src="imagens/spinning.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5>Spinning</h5>
+
+                                <p>
+                                    Queime calorias pedalando com intensidade.
+                                </p>
+
+                                <a href="#" class="btn btn-warning">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card modalidade-card">
+                            <img src="imagens/natacao.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5>Natação</h5>
+
+                                <p>
+                                    Exercício completo para corpo e mente.
+                                </p>
+
+                                <a href="#" class="btn btn-warning">
+                                    Saiba Mais
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="container py-5">
+
+            <h2 class="text-center text-warning mb-5">
+                Planos
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="card text-center p-4">
+                        <h3>Mensal</h3>
+                        <h2>R$ 89,90</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card text-center p-4">
+                        <h3>Trimestral</h3>
+                        <h2>R$ 229,90</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card text-center p-4">
+                        <h3>Anual</h3>
+                        <h2>R$ 799,90</h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <h2 class="text-center text-warning mb-5">Destaques</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="destaque-card text-center p-4">
+                        <i class="bi bi-trophy-fill"></i>
+                        <h4>Equipamentos Modernos</h4>
+                        <p>Aparelhos de última geração.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="destaque-card text-center p-4">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <h4>Saúde e Bem-estar</h4>
+                        <p>Treinos para qualidade de vida.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="destaque-card text-center p-4">
+                        <i class="bi bi-people-fill"></i>
+                        <h4>Profissionais Qualificados</h4>
+                        <p>Acompanhamento especializado.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="container py-5">
+
+            <h2 class="text-center text-warning mb-4">
+                Contato
+            </h2>
+
+            <form id="formContato">
+
+                <input type="text" class="form-control mb-3" placeholder="Nome" required>
+
+                <input type="email" class="form-control mb-3" placeholder="E-mail" required>
+
+                <textarea class="form-control mb-3" rows="5" placeholder="Mensagem" required></textarea>
+
+                <button class="btn btn-warning">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h4>POWER FIT ACADEMIA ALVES</h4>
+
+            <p>
+                Transformando vidas através da saúde, disciplina e qualidade de vida.
+            </p>
+
+            <div class="redes">
+                <a href="https://instagram.com/lukinha.ag" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+
+            <p class="copyright">
+                © 2026 Power Fit Academia Alves - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
